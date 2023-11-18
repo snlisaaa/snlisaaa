@@ -22,35 +22,94 @@
     />
 
     <link rel="stylesheet" href="public/style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-wrapper">
-        <h1>LOGO</h1>
-        <menu class="nav-menu">
-          <li>Menu1</li>
-          <li>Menu1</li>
-          <li>Menu1</li>
-          <li>Menu1</li>
-          <li>Menu1</li>
+        <h1>SN</h1>
+        <menu class="nav-menu translate-x-full" id="nav-menu">
+          <div class="nav-mobile">
+            <h1>SN</h1>
+             <button class="hamburger-close" id="nav-close-button">
+              <i class="fas fa-xmark"></i>
+              </button>
+          </div>
+          <div class="menu-links">
+            <li class="nav-links">
+            <a href="#hero">
+              Home
+            </a>
+          </li>
+          <li class="nav-links">
+            <a href="#services">
+              Services
+            </a>
+          </li>
+          <li class="nav-links">
+            <a href="#skills">
+              Skills
+            </a>
+          </li>
+          <li class="nav-links">
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
+          <li class="nav-links">
+            <a href="#resume">
+              Resume
+            </a>
+          </li>
+          </div>
         </menu>
+         <menu class="nav-menu-desktop">
+            <li>
+            <a href="#hero">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="#resume">
+              Resume
+            </a>
+          </li>
+          
+        </menu>
+        <button class="hamburger-button" id="nav-button">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     </nav>
-    <!-- hero-section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Welcome to my personal portofolio website</h1>
+   <main class="main-content">
+     <!-- hero-section -->
+    <div class="hero" id="hero">
+      <div class="hero-content" >
+        <h1 >Welcome to my personal portofolio website</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-          earum fugit. Facere, eos dolorum qui architecto nesciunt autem quia
-          alias!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nesciunt assumenda molestias. Similique, eos. Molestias pariatur architecto esse consectetur enim.
         </p>
         <div class="hero-buttons">
-          <button class="chat-with-me">Chat with me</button>
+          <button  class="chat-with-me">Chat with me</button>
           <button class="get-started">Get Started</button>
         </div>
       </div>
-      <div class="hero-illustration">
+      <div class="hero-illustration" data-aos="fade-left">
         <img
           src="./assets/images/hero-illustration.png"
           alt="hero-illustration"
@@ -58,7 +117,7 @@
       </div>
     </div>
     <!-- our services section -->
-    <div class="our-services-section">
+    <div class="our-services-section" id="services">
       <div class="our-services-wrapper">
         <div class="our-services-title">
           <h1>Our Services</h1>
@@ -88,7 +147,7 @@
             <div class="card-icon">
               <i class="fas fa-globe"></i>
             </div>
-            <h1>Web Development</h1>
+            <h1>Web Desain</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               id.
@@ -104,7 +163,7 @@
             <div class="card-icon">
               <i class="fas fa-globe"></i>
             </div>
-            <h1>Web Development</h1>
+            <h1>Content Creator</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
               id.
@@ -120,7 +179,7 @@
       </div>
     </div>
     <!-- why me -->
-    <div class="why-me-section">
+    <div class="why-me-section" id="skills">
       <div class="why-me-wrapper">
         <div class="why-me-content">
           <h1>Why Me?</h1>
@@ -147,14 +206,14 @@
         </div>
       </div>
     </div>
-    <div class="follow-content-section">
+    <!-- follow content -->
+    <div class="follow-content-section" id="contact">
       <div class="follow-content-wrapper">
         <div class="follow-content">
           <h1>Find me on instagram 😊</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-            maiores error alias ducimus corporis illum reiciendis totam facilis
-            delectus exercitationem?
+            maiores error alias ducimus corporis illum
           </p>
           <button class="follow-now">Follow now!</button>
         </div>
@@ -166,5 +225,69 @@
         </div>
       </div>
     </div>
+    <!-- end follow content -->
+   </main>
+
+    <footer class="footer">
+      <!-- div 1 -->
+      <div class="footer-logo-section">
+        <div class="footer-logo">
+          <h1>SN</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="footer-sosmed">
+          <a class="sosmed" href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+         <a class="sosmed" href="#">
+           <i class="fab fa-instagram"></i>
+         </a>
+          <a class="sosmed" href="#">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a class="sosmed" href="#">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        </div>
+      </div>
+
+      <!-- div 2 -->
+      <div class="footer-navigation">
+        <h1>Navigasi</h1>
+        <ul>
+          <li>Menu1</li>
+          <li>Menu1</li>
+          <li>Menu1</li>
+          <li>Menu1</li>
+        </ul>
+      </div>
+
+      <!-- div 3 -->
+      <div class="footer-contact-section">
+        <div class="footer-contact">
+          <h1>Contacts</h1>
+         <div class="contact">
+           <p>+62 838 0615 0037</p>
+          <p>sitinurhalisah631@gmail.com</p>
+         </div>
+        </div>
+        <div class="footer-newsletter">
+          <h1>Subscribe Newsletter</h1>
+          <form class="subscribe-form">
+            <input class="email" placeholder="yourmail@gmail.com" type="email" name="Newsletter" />
+          <button class="subscribe">Subscribe Now!</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-copyright">
+      &copy;2023 Siti Nurhalisah All Right Reversed
+    </footer>
+    <script src="./public/javascript/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
